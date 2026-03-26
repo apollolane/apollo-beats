@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apollo-Beats.com • For All Your Production Needs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+    body { background: #e5e5e5; font-family: 'VT323', monospace; }
+    .distressed { font-family: 'Press Start 2P', cursive; text-shadow: 3px 3px 0 #000; }
+    .cassette-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .cassette-btn:hover { transform: rotate(4deg) scale(1.08); box-shadow: 6px 6px 0 #000; }
+    .nav-link { position: relative; }
+    .nav-link:after { content: ''; position: absolute; width: 0; height: 4px; bottom: -2px; left: 0; background: #2563eb; transition: width 0.3s; }
+    .nav-link:hover:after { width: 100%; }
+  </style>
+</head>
+<body class="bg-[#e5e5e5] text-black">
+
+  <!-- HEADER (drop your original logo here) -->
+  <header class="bg-white border-b-4 border-black py-4 shadow-[4px_4px_0_#000] sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <img src="apollo-beats-logo.png" alt="Apollo-Beats.com" class="h-20">
+      <nav class="flex gap-8 text-xl font-bold">
+        <a href="#home" class="nav-link">HOME</a>
+        <a href="#beats" class="nav-link">BEATS</a>
+        <a href="#samples" class="nav-link">SAMPLES</a>
+        <a href="#kits" class="nav-link">KITS</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+      <button class="cassette-btn bg-blue-600 text-white px-8 py-3 text-xl border-4 border-black">🛒 CART</button>
+    </div>
+  </header>
+
+  <!-- HERO (from previous) -->
+  <section id="home" class="max-w-7xl mx-auto px-6 py-16 text-center border-b-4 border-black">
+    <h1 class="distressed text-7xl leading-none mb-4">PREMIUM BEATS<br>FOR ALL YOUR PRODUCTION NEEDS</h1>
+    <p class="text-3xl mb-8">90s soul • modern fire • instant download</p>
+    <a href="#beats" class="cassette-btn inline-block bg-blue-600 text-white text-3xl px-12 py-6 border-4 border-black">BROWSE BEATS →</a>
+  </section>
+
+  <!-- BEATS STORE SECTION (matches the new mockup) -->
+  <section id="beats" class="max-w-7xl mx-auto px-6 py-12">
+    <h2 class="distressed text-5xl mb-8 text-center">ALL BEATS – INSTANT DOWNLOAD</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- Card example – duplicate & customize as needed -->
+      <div class="bg-white border-4 border-black p-4 shadow-[4px_4px_0_#000] hover:shadow-[8px_8px_0_#000] transition-all">
+        <div class="aspect-square bg-gray-300 flex items-center justify-center text-7xl mb-4">📼</div>
+        <h3 class="font-bold text-2xl">TRAP KING</h3>
+        <div class="flex justify-between text-sm mt-1"><span>140 BPM • A min</span><span class="text-blue-600">$29</span></div>
+        <div class="flex gap-3 mt-4">
+          <button class="flex-1 cassette-btn bg-black text-white py-3 text-lg">▶ PLAY</button>
+          <button class="flex-1 cassette-btn bg-blue-600 text-white py-3 text-lg">ADD TO CART</button>
+        </div>
+      </div>
+      <!-- Add 11 more identical cards here for your full store -->
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION (matches the new mockup) -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-16 bg-white border-t-4 border-b-4 border-black">
+    <h2 class="distressed text-5xl mb-12 text-center">THE STORY BEHIND THE BEATS</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-2xl leading-relaxed">Born in the 90s basement studios of Conway, Arkansas – Apollo Beats fuses old-school cassette soul with today's trap fire. Every loop, every 808, every sample is hand-crafted for producers who want that raw, authentic sound.</p>
+        <ul class="mt-8 space-y-6 text-xl">
+          <li class="flex items-start gap-4">📼 <span>1995 – First tape recorded on a boombox</span></li>
+          <li class="flex items-start gap-4">📼 <span>2024 – Digital drops for the next generation</span></li>
+        </ul>
+      </div>
+      <div class="bg-gray-200 border-4 border-black p-6 text-center text-6xl">📼 📼 📼</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white py-12 text-center">
+    <p class="text-2xl">© APOLLO-BEATS.COM • MADE WITH LOVE IN ARKANSAS • FOR ALL YOUR PRODUCTION NEEDS</p>
+  </footer>
+</body>
+        </html>
